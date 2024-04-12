@@ -1,32 +1,32 @@
-# What is AspnetRun ? 
+# What is CrudTestApplication ? 
 The best path to **leverage your ASP.NET Core** skills. Onboarding to **Full Stack .Net Core Developer** jobs. Boilerplate for **ASP.NET Core reference application** with **Entity Framework Core**, demonstrating a layered application architecture with DDD best practices. Implements NLayer **Hexagonal architecture** (Core, Application, Infrastructure and Presentation Layers) and **Domain Driven Design** (Entities, Repositories, Domain/Application Services, DTO's...) 
 and aimed to be a **Clean Architecture**, with applying **SOLID principles** in order to use for a project template. 
 Also implements **best practices** like **loosely-coupled, dependency-inverted** architecture and using **design patterns** such as **Dependency Injection**, logging, validation, exception handling, localization and so on.
 
 You can check full repository documentations and step by step development of **[100+ page e-book PDF](https://aspnetrun.azurewebsites.net)** from here - **https://aspnetrun.azurewebsites.net**. Also detail introduction of book and project structure exists on **[medium aspnetrun page](https://medium.com/aspnetrun)**. You can follow **aspnetrun repositories** for building **step by step** asp.net core **web development skills**.
 
-# AspnetRun Repositories
-Here you can find all of the **aspnetrun repositories from easy to difficult**, Also this list can be track a **learning path** of asp.net core respectively;
-* **[run-aspnetcore-basics](https://github.com/aspnetrun/run-aspnetcore-basics)** - Building fastest ASP.NET Core Default Web Application template. This solution **only one solution one project** for **idea generation** with Asp.Net Core. 
-* **[run-aspnetcore](https://github.com/aspnetrun/run-aspnetcore)** - Building ASP.NET Core Web Application with Entity Framework.Core and apply **Clean Architecture** with DDD best practices.
-* **[run-aspnetcore-cqrs](https://github.com/aspnetrun/run-aspnetcore-cqrs)** - Building Single-Page Web Applications(SPA) using ASP.NET Core & EF.Core, Web API Project and implement **CQRS Design Pattern**.
-* **[run-aspnetcore-microservices](https://github.com/aspnetrun/run-aspnetcore-microservices)** - Building **Microservices** on .Net platforms which used **Asp.Net Web API, Docker, RabbitMQ, Ocelot API Gateway, MongoDB, Redis, SqlServer, Entity Framework Core, CQRS and Clean Architecture** implementation.
+# crudTestApplication Repositories
+Here you can find all of the **crudTestApplication repositories from easy to difficult**, Also this list can be track a **learning path** of asp.net core respectively;
+* **[run-aspnetcore-basics](https://github.com/crudTestApplication/run-aspnetcore-basics)** - Building fastest ASP.NET Core Default Web Application template. This solution **only one solution one project** for **idea generation** with Asp.Net Core. 
+* **[run-aspnetcore](https://github.com/crudTestApplication/run-aspnetcore)** - Building ASP.NET Core Web Application with Entity Framework.Core and apply **Clean Architecture** with DDD best practices.
+* **[run-aspnetcore-cqrs](https://github.com/crudTestApplication/run-aspnetcore-cqrs)** - Building Single-Page Web Applications(SPA) using ASP.NET Core & EF.Core, Web API Project and implement **CQRS Design Pattern**.
+* **[run-aspnetcore-microservices](https://github.com/crudTestApplication/run-aspnetcore-microservices)** - Building **Microservices** on .Net platforms which used **Asp.Net Web API, Docker, RabbitMQ, Ocelot API Gateway, MongoDB, Redis, SqlServer, Entity Framework Core, CQRS and Clean Architecture** implementation.
 
 ## Bonus
 For this repo, there is also **implemented base repository** and **applying real-world e-commerce examples** with developing new enterprice features for example Identity, Paging, Localization etc.. Check below repository;
 
-* **[run-aspnetcore-realworld](https://github.com/aspnetrun/run-aspnetcore-realworld)** - implemented run-aspnetcore repository and build **sample of eCommerce reference application** on Multi-Page Web Applications(MPA) using ASP.NET Core Razor Pages templates.
+* **[run-aspnetcore-realworld](https://github.com/crudTestApplication/run-aspnetcore-realworld)** - implemented run-aspnetcore repository and build **sample of eCommerce reference application** on Multi-Page Web Applications(MPA) using ASP.NET Core Razor Pages templates.
 
 
 # run-aspnetcore
-Here is CRUD operations of aspnetrun-core template project;
+Here is CRUD operations of crudTestApplication-core template project;
 
 ![Recordit GIF](http://g.recordit.co/LJCyYfQEpX.gif)
 
 **run-aspnetcore** is a general purpose to implement the **Default Web Application template of .Net** with **layered architecture** for building modern web applications with latest ASP.NET Core & Web API & EF Core technologies. 
 
 ## Give a Star! :star:
-If you liked the project or if AspnetRun helped you, please **give a star**. And also please **fork** this repository and send us **pull-requests**. If you find any problem please open **issue**.
+If you liked the project or if crudTestApplication helped you, please **give a star**. And also please **fork** this repository and send us **pull-requests**. If you find any problem please open **issue**.
 
 ## Getting Started
 Use these instructions to get the project up and running.
@@ -49,13 +49,13 @@ dotnet restore
 ```csharp
 dotnet build
 ```
-4. Next, within the AspnetRun.Web directory, launch the back end by running:
+4. Next, within the crudTestApplication.Web directory, launch the back end by running:
 ```csharp
 dotnet run
 ```
 5. Launch http://localhost:5400/ in your browser to view the Web UI.
 
-If you have **Visual Studio** after cloning Open solution with your IDE, AspnetRun.Web should be the start-up project. Directly run this project on Visual Studio with **F5 or Ctrl+F5**. You will see index page of project, you can navigate product and category pages and you can perform crud operations on your browser.
+If you have **Visual Studio** after cloning Open solution with your IDE, crudTestApplication.Web should be the start-up project. Directly run this project on Visual Studio with **F5 or Ctrl+F5**. You will see index page of project, you can navigate product and category pages and you can perform crud operations on your browser.
 
 ### Usage
 After cloning or downloading the sample you should be able to run it using an In Memory database immediately. The default configuration of Entity Framework Database is **"InMemoryDatabase"**.
@@ -65,13 +65,13 @@ If you wish to use the project with a persistent database, you will need to run 
 public void ConfigureDatabases(IServiceCollection services)
 {
     // use in-memory database
-    services.AddDbContext<AspnetRunContext>(c =>
-        c.UseInMemoryDatabase("AspnetRunConnection")
+    services.AddDbContext<crudTestApplicationContext>(c =>
+        c.UseInMemoryDatabase("crudTestApplicationConnection")
         .UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking));
 
     //// use real database
-    //services.AddDbContext<AspnetRunContext>(c =>
-    //    c.UseSqlServer(Configuration.GetConnectionString("AspnetRunConnection"))
+    //services.AddDbContext<crudTestApplicationContext>(c =>
+    //    c.UseSqlServer(Configuration.GetConnectionString("crudTestApplicationConnection"))
     //    .UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking));
 }
 ```
@@ -82,15 +82,15 @@ public void ConfigureDatabases(IServiceCollection services)
 
 ```csharp
 dotnet restore
-dotnet ef database update -c AspnetRunContext -p ../AspnetRun.Infrastructure/AspnetRun.Infrastructure.csproj -s AspnetRun.Web.csproj
+dotnet ef database update -c crudTestApplicationContext -p ../crudTestApplication.Infrastructure/crudTestApplication.Infrastructure.csproj -s crudTestApplication.Web.csproj
 ```
-Or you can direct call ef commands from Visual Studio **Package Manager Console**. Open Package Manager Console, set default project to AspnetRun.Infrastructure and run below command;
+Or you can direct call ef commands from Visual Studio **Package Manager Console**. Open Package Manager Console, set default project to crudTestApplication.Infrastructure and run below command;
 ```csharp
 update-database
 ```
-These commands will create aspnetrun database which include Product and Category table. You can see from **AspnetRunContext.cs**.
+These commands will create crudTestApplication database which include Product and Category table. You can see from **crudTestApplicationContext.cs**.
 1. Run the application.
-The first time you run the application, it will seed aspnetrun sql server database with a few data such that you should see products and categories.
+The first time you run the application, it will seed crudTestApplication sql server database with a few data such that you should see products and categories.
 
 If you modify-change or add new some of entities to Core project, you should run ef migrate commands in order to update your database as the same way but below commands;
 ```csharp
@@ -99,9 +99,9 @@ update-database
 ```
 
 ## Layered Architecture
-AspnetRun implements NLayer **Hexagonal architecture** (Core, Application, Infrastructure and Presentation Layers) and **Domain Driven Design** (Entities, Repositories, Domain/Application Services, DTO's...). Also implements and provides a good infrastructure to implement **best practices** such as Dependency Injection, logging, validation, exception handling, localization and so on.
+crudTestApplication implements NLayer **Hexagonal architecture** (Core, Application, Infrastructure and Presentation Layers) and **Domain Driven Design** (Entities, Repositories, Domain/Application Services, DTO's...). Also implements and provides a good infrastructure to implement **best practices** such as Dependency Injection, logging, validation, exception handling, localization and so on.
 Aimed to be a **Clean Architecture** also called **Onion Architecture**, with applying **SOLID principles** in order to use for a project template. Also implements and provides a good infrastructure to implement **best practices** like **loosely-coupled, dependency-inverted** architecture
-The below image represents aspnetrun approach of development architecture of run repository series;
+The below image represents crudTestApplication approach of development architecture of run repository series;
 
 ![DDD_png_pure](https://user-images.githubusercontent.com/1147445/54773098-e1efe700-4c19-11e9-9150-74f7e770de42.png)
 
@@ -142,43 +142,43 @@ Includes Entity Framework Core Entities which creates sql table with **Entity Fr
 You can see example of **code-first** Entity definition as below;
 
 ```csharp
-public class Product : BaseEntity
-{        
-    public string ProductName { get; set; }
-    public string QuantityPerUnit { get; set; }
-    public decimal? UnitPrice { get; set; }
-    public short? UnitsInStock { get; set; }
-    public short? UnitsOnOrder { get; set; }
-    public short? ReorderLevel { get; set; }
-    public bool Discontinued { get; set; }
-    public int CategoryId { get; set; }
-    public Category Category { get; set; }
-
-    public static Product Create(int productId, int categoryId, string name, decimal? unitPrice = null, short? unitsInStock = null, short? unitsOnOrder = null, short? reorderLevel = null, bool discontinued = false)
+ public class Customer : Entity
     {
-        var product = new Product
+        public Customer()
         {
-            Id = productId,
-            CategoryId = categoryId,
-            ProductName = name,
-            UnitPrice = unitPrice,
-            UnitsInStock = unitsInStock,
-            UnitsOnOrder = unitsOnOrder,
-            ReorderLevel = reorderLevel,
-            Discontinued = discontinued
-        };
-        return product;
+        }
+
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public DateTime DateOfBirth { get; set; }
+        public string PhoneNumber { get; set; }
+        public string Email { get; set; }
+        public string BankAccountNumber { get; set; }
+
+        public static Customer Create(int customerId, string firstName, string lastName, DateTime dateOfBirth, string phoneNumber, string email, string BankAccountNumber)
+        {
+            var customer = new Customer
+            {
+                Id = customerId,
+                FirstName = firstName,
+                LastName = lastName,
+                DateOfBirth = dateOfBirth,
+                PhoneNumber = phoneNumber,
+                Email = email,
+                BankAccountNumber = BankAccountNumber,
+            };
+            return customer;
+        }
     }
-}
 ```
-Applying domain driven approach, Product class responsible to create Product instance. 
+Applying domain driven approach, Customer class responsible to create Customer instance. 
 
 #### Interfaces
-Abstraction of Repository - Domain repositories (IAsyncRepository - IProductRepository) - Specifications etc.. This interfaces include database operations without any application and ui responsibilities.
+Abstraction of Repository - Domain repositories (IAsyncRepository - ICustomerRepository) - Specifications etc.. This interfaces include database operations without any application and ui responsibilities.
 
 #### Specifications
 This folder is implementation of **[specification pattern](https://en.wikipedia.org/wiki/Specification_pattern)**. Creates custom scripts with using **ISpecification** interface. Using BaseSpecification managing Criteria, Includes, OrderBy, Paging.
-This specs runs when EF commands working with passing spec. This specs implemented SpecificationEvaluator.cs and creates query to AspnetRunRepository.cs in ApplySpecification method.This helps create custom queries.
+This specs runs when EF commands working with passing spec. This specs implemented SpecificationEvaluator.cs and creates query to crudTestApplicationRepository.cs in ApplySpecification method.This helps create custom queries.
 
 ### Infrastructure Layer
 Implementation of Core interfaces in this project with **Entity Framework Core** and other dependencies.
@@ -201,34 +201,33 @@ Development of **Domain Logic with implementation**. Interfaces drives business 
 Application layer defines that user required actions in app services classes as below way;
 
 ```csharp
-public interface IProductAppService
+public interface ICustomerAppService
 {
-    Task<IEnumerable<ProductDto>> GetProductList();
-    Task<ProductDto> GetProductById(int productId);
-    Task<IEnumerable<ProductDto>> GetProductByName(string productName);
-    Task<IEnumerable<ProductDto>> GetProductByCategory(int categoryId);
-    Task<ProductDto> Create(ProductDto entityDto);
-    Task Update(ProductDto entityDto);
-    Task Delete(ProductDto entityDto);
+    Task<IEnumerable<CustomerDto>> GetCustomerList();
+    Task<CustomerDto> GetCustomerById(int customerId);
+    Task<IEnumerable<CustomerDto>> GetCustomerByName(string customerName);
+    Task<CustomerDto> Create(CustomerDto entityDto);
+    Task Update(CustomerDto entityDto);
+    Task Delete(CustomerDto entityDto);
 }
 ```
 Also implementation located same places in order to choose different implementation at runtime when DI bootstrapped.
 ```csharp
-public class ProductAppService : IProductAppService
+public class CustomerAppService : ICustomerAppService
 {
-    private readonly IProductRepository _productRepository;
-    private readonly IAppLogger<ProductAppService> _logger;
+    private readonly ICustomerRepository _customerRepository;
+    private readonly IAppLogger<CustomerAppService> _logger;
 
-    public ProductAppService(IProductRepository productRepository, IAppLogger<ProductAppService> logger)
+    public CustomerAppService(ICustomerRepository customerRepository, IAppLogger<CustomerAppService> logger)
     {
-        _productRepository = productRepository ?? throw new ArgumentNullException(nameof(productRepository));
+        _customerRepository = customerRepository ?? throw new ArgumentNullException(nameof(customerRepository));
         _logger = logger ?? throw new ArgumentNullException(nameof(logger));
     }
 
-    public async Task<IEnumerable<ProductDto>> GetProductList()
+    public async Task<IEnumerable<CustomerDto>> GetCustomerList()
     {
-        var productList = await _productRepository.GetProductListAsync();
-        var mapped = ObjectMapper.Mapper.Map<IEnumerable<ProductDto>>(productList);
+        var customerList = await _customerRepository.GetCustomerListAsync();
+        var mapped = ObjectMapper.Mapper.Map<IEnumerable<CustomerDto>>(customerList);
         return mapped;
     }
 }
@@ -241,58 +240,55 @@ The application's main **starting point** is the ASP.NET Core web project. This 
 
 Web layer defines that user required actions in page services classes as below way;
 ```csharp
-public interface IProductPageService
+public interface ICustomerPageService
 {
-    Task<IEnumerable<ProductViewModel>> GetProducts(string productName);
-    Task<ProductViewModel> GetProductById(int productId);
-    Task<IEnumerable<ProductViewModel>> GetProductByCategory(int categoryId);
+    Task<IEnumerable<CustomerViewModel>> GetCustomers(string customerName);
+    Task<CustomerViewModel> GetCustomerById(int customerId);
     Task<IEnumerable<CategoryViewModel>> GetCategories();
-    Task<ProductViewModel> CreateProduct(ProductViewModel productViewModel);
-    Task UpdateProduct(ProductViewModel productViewModel);
-    Task DeleteProduct(ProductViewModel productViewModel);
+    Task<CustomerViewModel> CreateCustomer(CustomerViewModel customerViewModel);
+    Task UpdateCustomer(CustomerViewModel customerViewModel);
+    Task DeleteCustomer(CustomerViewModel customerViewModel);
 }
 ```
 Also implementation located same places in order to choose different implementation at runtime when DI bootstrapped.
 ```csharp
-public class ProductPageService : IProductPageService
+public class CustomerPageService : ICustomerPageService
 {
-    private readonly IProductAppService _productAppService;
-    private readonly ICategoryAppService _categoryAppService;
+    private readonly ICustomerAppService _customerAppService;;
     private readonly IMapper _mapper;
-    private readonly ILogger<ProductPageService> _logger;
+    private readonly ILogger<CustomerPageService> _logger;
 
-    public ProductPageService(IProductAppService productAppService, ICategoryAppService categoryAppService, IMapper mapper, ILogger<ProductPageService> logger)
+    public CustomerPageService(ICustomerAppService customerAppService, IMapper mapper, ILogger<CustomerPageService> logger)
     {
-        _productAppService = productAppService ?? throw new ArgumentNullException(nameof(productAppService));
-        _categoryAppService = categoryAppService ?? throw new ArgumentNullException(nameof(categoryAppService));
+        _customerAppService = customerAppService ?? throw new ArgumentNullException(nameof(customerAppService));
         _mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
         _logger = logger ?? throw new ArgumentNullException(nameof(logger));
     }
 
-    public async Task<IEnumerable<ProductViewModel>> GetProducts(string productName)
+    public async Task<IEnumerable<CustomerViewModel>> GetCustomers(string customerName)
     {
-        if (string.IsNullOrWhiteSpace(productName))
+        if (string.IsNullOrWhiteSpace(customerName))
         {
-            var list = await _productAppService.GetProductList();
-            var mapped = _mapper.Map<IEnumerable<ProductViewModel>>(list);
+            var list = await _customerAppService.GetCustomerList();
+            var mapped = _mapper.Map<IEnumerable<CustomerViewModel>>(list);
             return mapped;
         }
 
-        var listByName = await _productAppService.GetProductByName(productName);
-        var mappedByName = _mapper.Map<IEnumerable<ProductViewModel>>(listByName);
+        var listByName = await _customerAppService.GetCustomerByName(customerName);
+        var mappedByName = _mapper.Map<IEnumerable<CustomerViewModel>>(listByName);
         return mappedByName;
     }
 }
 ```
 ### Test Layer
 For each layer, there is a test project which includes intended layer dependencies and mock classes. So that means Core-Application-Infrastructure and Web layer has their own test layer. By this way this test projects also divided by **unit, functional and integration tests** defined by in which layer it is implemented. 
-Test projects using **xunit and Mock libraries**.  xunit, because that's what ASP.NET Core uses internally to test the product. Moq, because perform to create fake objects clearly and its very modular.
+Test projects using **xunit and Mock libraries**.  xunit, because that's what ASP.NET Core uses internally to test the customer. Moq, because perform to create fake objects clearly and its very modular.
 
 
 ## Technologies
-* .NET Core 3.0
-* ASP.NET Core 3.0
-* Entity Framework Core 3.0 
+* .NET Core 7.0
+* ASP.NET Core 7.0
+* Entity Framework Core 7.0 
 * .NET Core Native DI
 * Razor Pages
 * AutoMapper
@@ -312,34 +308,7 @@ Test projects using **xunit and Mock libraries**.  xunit, because that's what AS
 
 * This repository is not intended to be a definitive solution.
 * This repository not implemented a lot of 3rd party packages, we are try to avoid the over engineering when building on best practices.
-* Beware to use in production way.
+* Beware to use in customerion way.
 
-## Contributing
-
-Please read [Contributing.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/aspnetrun/run-core/tags). 
-
-## Next Releases and RoapMap
-
-For information on upcoming features and fixes, take a look at the [product roadmap](https://github.com/aspnetrun/run-core/projects).
-
-## Deployment - AspnetRun Online
-
-This project is deployed on Azure. See the project running on Azure in [here](aspnetrun.com).
-
-## Pull-Request
-
-Please fork this repository, and send me your findings with pull-requests. This is open-source repository so open to contributions.
-
-## Authors
-
-* **Mehmet Ozkaya** - *Initial work* - [mehmetozkaya](https://github.com/mehmetozkaya)
-
-See also the list of [contributors](https://github.com/aspnetrun/run-core/contributors) who participated in this project. Check also [gihtub page of repository](https://aspnetrun.github.io/run-aspnetcore/)
-
-## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
