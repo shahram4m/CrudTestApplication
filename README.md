@@ -1,9 +1,27 @@
-# What is CrudTestApplication ? 
-The best path to **leverage your ASP.NET Core** skills. Onboarding to **Full Stack .Net Core Developer** jobs. Boilerplate for **ASP.NET Core reference application** with **Entity Framework Core**, demonstrating a layered application architecture with DDD best practices. Implements NLayer **Hexagonal architecture** (Core, Application, Infrastructure and Presentation Layers) and **Domain Driven Design** (Entities, Repositories, Domain/Application Services, DTO's...) 
-and aimed to be a **Clean Architecture**, with applying **SOLID principles** in order to use for a project template. 
-Also implements **best practices** like **loosely-coupled, dependency-inverted** architecture and using **design patterns** such as **Dependency Injection**, logging, validation, exception handling, localization and so on.
+# Task Assignment: Develop a Full Stack .NET Core Reference Application
+Objective: The goal of this task is to develop a comprehensive reference application for Full Stack .NET Core Developers, leveraging ASP.NET Core, Entity Framework Core, and implementing best practices in software architecture, including Clean Architecture, Domain-Driven Design (DDD), and SOLID principles.
 
-You can check full repository documentations and step by step development of **[100+ page e-book PDF](https://aspnetrun.azurewebsites.net)** from here - **https://aspnetrun.azurewebsites.net**. Also detail introduction of book and project structure exists on **[medium aspnetrun page](https://medium.com/aspnetrun)**. You can follow **aspnetrun repositories** for building **step by step** asp.net core **web development skills**.
+Requirements:
+
+Project Structure:
+Implement a NLayer Hexagonal architecture consisting of Core, Application, Infrastructure, and Presentation Layers.
+Follow Domain-Driven Design (DDD) best practices, including Entities, Repositories, Domain/Application Services, and DTOs.
+Aim for a Clean Architecture, applying SOLID principles to ensure a loosely-coupled, dependency-inverted architecture.
+Technologies and Tools:
+Use ASP.NET Core for the web application.
+Utilize Entity Framework Core for data access.
+Implement design patterns such as Dependency Injection, logging, validation, exception handling, and localization.
+Documentation and Resources:
+Refer to the full repository documentation and the step-by-step development guide provided in the 100+ page e-book PDF available at https://aspnetrun.azurewebsites.net.
+For a detailed introduction to the project structure and further learning, visit the Medium aspnetrun page.
+Deliverables:
+A complete ASP.NET Core reference application demonstrating a layered application architecture with DDD best practices.
+Ensure the application adheres to Clean Architecture principles and applies SOLID principles.
+Provide a comprehensive documentation of the project, including setup instructions, architecture overview, and code walkthroughs.
+Evaluation Criteria:
+Code quality, adherence to best practices, and implementation of Clean Architecture and SOLID principles.
+Documentation clarity and completeness.
+Application functionality and performance.
 
 # crudTestApplication Repositories
 Here you can find all of the **crudTestApplication repositories from easy to difficult**, Also this list can be track a **learning path** of asp.net core respectively;
