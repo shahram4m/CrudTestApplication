@@ -102,8 +102,6 @@ crudTestApplication implements NLayer **Hexagonal architecture** (Core, Applicat
 Aimed to be a **Clean Architecture** also called **Onion Architecture**, with applying **SOLID principles** in order to use for a project template. Also implements and provides a good infrastructure to implement **best practices** like **loosely-coupled, dependency-inverted** architecture
 The below image represents crudTestApplication approach of development architecture of run repository series;
 
-![DDD_png_pure](https://user-images.githubusercontent.com/1147445/54773098-e1efe700-4c19-11e9-9150-74f7e770de42.png)
-
 ### Structure of Project
 Repository include layers divided by **4 project**;
 * Core
