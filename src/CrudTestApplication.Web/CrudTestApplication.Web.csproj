@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>    
+    <PackageReference Include="AutoMapper" Version="13.0.1" />    
+    <PackageReference Include="libphonenumber-csharp" Version="8.13.34" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CrudTestApplication.Application\CrudTestApplication.Application.csproj" />
+    <ProjectReference Include="..\CrudTestApplication.Infrastructure\CrudTestApplication.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
+
+
