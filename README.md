@@ -21,7 +21,6 @@ For this repo, there is also **implemented base repository** and **applying real
 # run-aspnetcore
 Here is CRUD operations of crudTestApplication-core template project;
 
-![Recordit GIF](http://g.recordit.co/LJCyYfQEpX.gif)
 
 **run-aspnetcore** is a general purpose to implement the **Default Web Application template of .Net** with **layered architecture** for building modern web applications with latest ASP.NET Core & Web API & EF Core technologies. 
 
