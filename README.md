@@ -12,12 +12,6 @@ Here you can find all of the **crudTestApplication repositories from easy to dif
 * **[run-aspnetcore-cqrs](https://github.com/crudTestApplication/run-aspnetcore-cqrs)** - Building Single-Page Web Applications(SPA) using ASP.NET Core & EF.Core, Web API Project and implement **CQRS Design Pattern**.
 * **[run-aspnetcore-microservices](https://github.com/crudTestApplication/run-aspnetcore-microservices)** - Building **Microservices** on .Net platforms which used **Asp.Net Web API, Docker, RabbitMQ, Ocelot API Gateway, MongoDB, Redis, SqlServer, Entity Framework Core, CQRS and Clean Architecture** implementation.
 
-## Bonus
-For this repo, there is also **implemented base repository** and **applying real-world e-commerce examples** with developing new enterprice features for example Identity, Paging, Localization etc.. Check below repository;
-
-* **[run-aspnetcore-realworld](https://github.com/crudTestApplication/run-aspnetcore-realworld)** - implemented run-aspnetcore repository and build **sample of eCommerce reference application** on Multi-Page Web Applications(MPA) using ASP.NET Core Razor Pages templates.
-
-
 # run-aspnetcore
 Here is CRUD operations of crudTestApplication-core template project;
 
