@@ -54,7 +54,7 @@ dotnet run
 ```
 5. Launch http://localhost:5400/ in your browser to view the Web UI.
 
-If you have **Visual Studio** after cloning Open solution with your IDE, crudTestApplication.Web should be the start-up project. Directly run this project on Visual Studio with **F5 or Ctrl+F5**. You will see index page of project, you can navigate product and category pages and you can perform crud operations on your browser.
+If you have **Visual Studio** after cloning Open solution with your IDE, crudTestApplication.Web should be the start-up project. Directly run this project on Visual Studio with **F5 or Ctrl+F5**. You will see index page of project, you can navigate customer pages and you can perform crud operations on your browser.
 
 ### Usage
 After cloning or downloading the sample you should be able to run it using an In Memory database immediately. The default configuration of Entity Framework Database is **"InMemoryDatabase"**.
@@ -87,9 +87,9 @@ Or you can direct call ef commands from Visual Studio **Package Manager Console*
 ```csharp
 update-database
 ```
-These commands will create crudTestApplication database which include Product and Category table. You can see from **crudTestApplicationContext.cs**.
+These commands will create crudTestApplication database which include Customer table. You can see from **crudTestApplicationContext.cs**.
 1. Run the application.
-The first time you run the application, it will seed crudTestApplication sql server database with a few data such that you should see products and categories.
+The first time you run the application, it will seed crudTestApplication sql server database with a few data such that you should see customer.
 
 If you modify-change or add new some of entities to Core project, you should run ef migrate commands in order to update your database as the same way but below commands;
 ```csharp
@@ -241,7 +241,6 @@ public interface ICustomerPageService
 {
     Task<IEnumerable<CustomerViewModel>> GetCustomers(string customerName);
     Task<CustomerViewModel> GetCustomerById(int customerId);
-    Task<IEnumerable<CategoryViewModel>> GetCategories();
     Task<CustomerViewModel> CreateCustomer(CustomerViewModel customerViewModel);
     Task UpdateCustomer(CustomerViewModel customerViewModel);
     Task DeleteCustomer(CustomerViewModel customerViewModel);
