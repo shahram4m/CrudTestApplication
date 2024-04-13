@@ -36,9 +36,6 @@ Here is CRUD operations of crudTestApplication-core template project;
 
 **run-aspnetcore** is a general purpose to implement the **Default Web Application template of .Net** with **layered architecture** for building modern web applications with latest ASP.NET Core & Web API & EF Core technologies. 
 
-## Give a Star! :star:
-If you liked the project or if crudTestApplication helped you, please **give a star**. And also please **fork** this repository and send us **pull-requests**. If you find any problem please open **issue**.
-
 ## Getting Started
 Use these instructions to get the project up and running.
 
