@@ -11,9 +11,6 @@ Technologies and Tools:
 Use ASP.NET Core for the web application.
 Utilize Entity Framework Core for data access.
 Implement design patterns such as Dependency Injection, logging, validation, exception handling, and localization.
-Documentation and Resources:
-Refer to the full repository documentation and the step-by-step development guide provided in the 100+ page e-book PDF available at https://aspnetrun.azurewebsites.net.
-For a detailed introduction to the project structure and further learning, visit the Medium aspnetrun page.
 Deliverables:
 A complete ASP.NET Core reference application demonstrating a layered application architecture with DDD best practices.
 Ensure the application adheres to Clean Architecture principles and applies SOLID principles.
@@ -23,12 +20,7 @@ Code quality, adherence to best practices, and implementation of Clean Architect
 Documentation clarity and completeness.
 Application functionality and performance.
 
-# crudTestApplication Repositories
-Here you can find all of the **crudTestApplication repositories from easy to difficult**, Also this list can be track a **learning path** of asp.net core respectively;
-* **[run-aspnetcore-basics](https://github.com/crudTestApplication/run-aspnetcore-basics)** - Building fastest ASP.NET Core Default Web Application template. This solution **only one solution one project** for **idea generation** with Asp.Net Core. 
-* **[run-aspnetcore](https://github.com/crudTestApplication/run-aspnetcore)** - Building ASP.NET Core Web Application with Entity Framework.Core and apply **Clean Architecture** with DDD best practices.
-* **[run-aspnetcore-cqrs](https://github.com/crudTestApplication/run-aspnetcore-cqrs)** - Building Single-Page Web Applications(SPA) using ASP.NET Core & EF.Core, Web API Project and implement **CQRS Design Pattern**.
-* **[run-aspnetcore-microservices](https://github.com/crudTestApplication/run-aspnetcore-microservices)** - Building **Microservices** on .Net platforms which used **Asp.Net Web API, Docker, RabbitMQ, Ocelot API Gateway, MongoDB, Redis, SqlServer, Entity Framework Core, CQRS and Clean Architecture** implementation.
+
 
 # run-aspnetcore
 Here is CRUD operations of crudTestApplication-core template project;
